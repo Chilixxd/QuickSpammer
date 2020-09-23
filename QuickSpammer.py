@@ -1,7 +1,7 @@
 # ANY CHANGES YOU MAY MAKE TO THIS CODE IS AT YOUR OWN RISK!
 # MADE FOR WINDOWS (10)
 
-#################################
+
 import tkinter as tk
 from tkinter import *
 from tkinter import ttk
@@ -10,7 +10,8 @@ from pynput.keyboard import Key, Controller
 from pynput.mouse import Button, Controller as Controller1
 keyboard = Controller()
 mouse = Controller1()
-############CUSTOM WORDS#########
+
+
 root = tk.Tk()
 root.geometry("400x150")
 root.title("QuickSpammer")
@@ -32,7 +33,8 @@ frame4.pack(fill="both", expand=1)
 notebook.add(frame1, text="Custom words")
 notebook.add(frame3, text="Left click")
 notebook.add(frame4, text="Right click")
-#################################
+
+
 label1 = tk.Label(frame1, text="Word(s) to spam: ")
 label1.grid(row=1, column=0, sticky=W, pady=2)
 
@@ -59,7 +61,8 @@ def customwords():
 
 button1 = tk.Button(frame1, text="GO!", command=customwords)
 button1.grid(row=5, column=3, sticky=W, pady=2)
-##############LEFT CLICK############
+
+
 label3 = tk.Label(frame3, text="How many times: ")
 label3.grid(row=1, column=0, sticky=W, pady=2)
 
@@ -77,7 +80,8 @@ def leftclick():
 
 button2 = tk.Button(frame3, text="GO!", command=leftclick)
 button2.grid(row=3, column=3, sticky=W, pady=2)
-#########RIGHT CLICK#############
+
+
 label4 = tk.Label(frame4, text="How many times: ")
 label4.grid(row=1, column=0, sticky=W, pady=2)
 
@@ -95,10 +99,6 @@ def rightclick():
 
 button3 = tk.Button(frame4, text="GO!", command=rightclick)
 button3.grid(row=3, column=3, sticky=W, pady=2)
-#################################
+
+
 root.mainloop()
-
-"""shit i have to do/bugs
-
-make this into an exe using pyinstaller (when finished)
-"""
