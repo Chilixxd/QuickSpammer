@@ -16,7 +16,6 @@ root = tk.Tk()
 root.geometry("400x150")
 root.title("QuickSpammer")
 root.configure(bg="white")
-root.iconbitmap('blank.png')
 
 notebook = ttk.Notebook(root)
 notebook.pack(pady=15)
