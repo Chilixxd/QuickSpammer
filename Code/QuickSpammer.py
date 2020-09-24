@@ -21,7 +21,6 @@ notebook = ttk.Notebook(root)
 notebook.pack(pady=15)
 
 frame1 = tk.Frame(notebook, width=1080, height=1920)
-frame2 = tk.Frame(notebook, width=1080, height=1920)
 frame3 = tk.Frame(notebook, width=1080, height=1920)
 frame4 = tk.Frame(notebook, width=1080, height=1920)
 
@@ -101,3 +100,4 @@ button3.grid(row=3, column=3, sticky=W, pady=2)
 
 
 root.mainloop()
+#happy coding;)
